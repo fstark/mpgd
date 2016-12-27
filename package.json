@@ -1,0 +1,11 @@
+{
+  "name": "mpgd",
+  "version": "0.1.0",
+  "description": "A multi player game server",
+  "dependencies":
+  {
+    "nodejs-websocket" : "1.7.x"
+  },
+  "main" : "lib/mpgd.js",
+  "license": "MIT"
+}
