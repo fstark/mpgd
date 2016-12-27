@@ -1,16 +1,6 @@
 Server messages are always:
 
-<VERSION> <CLIENTID> <PLAYER_COUNT>
-	<PLAYERID> <STATE> <POSX> <POSY>
-	...
-
-VERSION is '0'
-CLIENTID is a string representing the connected player
-PLAYER_COUNT is the number of players on the server
-STATE in IDLE, READY
-POSX is the position X of that player
-POSY is the position Y of that player
-
+MESSAGE: {"version":0,"player":"P2","games":{"P1":{"x":0,"y":0,"state":"IDLE"},"P2":{"x":0,"y":0,"state":"IDLE"}}}
 
 Clients messages are:
 

@@ -25,6 +25,8 @@
   {
     writeToScreen("CONNECTED");
     doSend("HELLO");
+    doSend("PING");
+    doSend("PLAY 4 4");
   }
 
   function onClose(evt)
@@ -35,7 +37,6 @@
   function onMessage(evt)
   {
     writeToScreen('<span style="color: blue;">MESSAGE: ' + evt.data+'</span>');
-    websocket.close();
   }
 
   function onError(evt)
