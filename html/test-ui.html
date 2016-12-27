@@ -21,12 +21,19 @@
     websocket.onerror = function(evt) { onError(evt) };
   }
 
+  function tryPlay()
+  {
+      doSend("PLAY 4 4");
+    setTimeout( tryPlay, Math.random()*5000 );
+  }
+
   function onOpen(evt)
   {
     writeToScreen("CONNECTED");
     doSend("HELLO");
     doSend("PING");
-    doSend("PLAY 4 4");
+
+    setTimeout( tryPlay, Math.random()*5000 );
   }
 
   function onClose(evt)
